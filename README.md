@@ -1,4 +1,4 @@
-# Date picker by raficraft (live demo)
+# Date picker by raficraft (NPM)
 
 A multilingual date picker from scratch for react.
 

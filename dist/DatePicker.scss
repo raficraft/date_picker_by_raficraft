@@ -1,0 +1,22 @@
+.container_dataPicker_by_raficraft {
+  display: flex;
+  flex-direction: column;
+  padding: 0.125rem 0;
+
+  label {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  input {
+    height: 34px;
+    padding: 8px;
+  }
+
+  span {
+    background-color: withe;
+  }
+}

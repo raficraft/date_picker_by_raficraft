@@ -1,0 +1,100 @@
+.date_picker_by_raficraft {
+  position: relative;
+  font-size: 12px;
+
+  .head {
+    //background-color: cyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0 0 0;
+    background-color: white;
+  }
+  .btn_carousel {
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: hotpink;
+    }
+  }
+  .home_icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: hotpink;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    margin-right: 0.25rem;
+    transition: 0.3s;
+
+    &:hover {
+      border: 1px solid hotpink;
+    }
+  }
+}
+
+.carousel {
+  position: absolute;
+  z-index: 40;
+  top: 4px;
+  overflow: auto;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 3px;
+
+  &_container {
+    padding: 0.5rem;
+    z-index: 50;
+    transform: translate3d(0, 0, 0);
+    display: flex;
+    height: 100%;
+    background-color: white;
+
+    table {
+      width: 100%;
+      th {
+        padding: 0.5rem 0;
+      }
+      td,
+      th {
+        text-align: center;
+        //border: 1px solid black;
+        vertical-align: middle;
+        transition: 0.3s;
+        width: 28px;
+        height: 28px;
+        margin: 1px;
+      }
+      td {
+        cursor: pointer;
+
+        border-radius: 50%;
+      }
+      td:hover:not(.notCurrent) {
+        background-color: green;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+      }
+      td.notCurrent {
+        color: grey;
+        cursor: not-allowed;
+      }
+      .currentDay {
+        background-color: hotpink;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
