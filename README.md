@@ -4,15 +4,15 @@
 ![SASS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![netlify](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![netlify](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) 
 
 
 A multilingual date picker from scratch for react.
-[code source](https://github.com/raficraft/date_picker_by_raficraft)
+[Code source](https://github.com/raficraft/date_picker_by_raficraft)
 
-[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/) under construction ^^
+[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/)
 
-## supported language
+## Supported language
 
 -  English (EN)
 -  English (US)
@@ -30,7 +30,7 @@ Other languages ​​will be added. Stay tuned. ^^
 ## Install
 <br>
 
-in your console
+In your terminal
 
 ```javascript
 npm i datepicker_by_raficraft
@@ -67,11 +67,12 @@ import { DatePicker } from "datepicker_by_raficraft";
 ## Settings
 <br>
 
+
+*By default the calendar is calculated by contribution to the current year. The calendar limits are calculated fifty years before the current year and fifty years after
+ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052*.
+
+
 The different props that you can pass in your component
-
-**By default the calendar is calculated by contribution to the current year. The calendar limits are calculated fifty years before the current year and fifty years after
-ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052**
-
 <br>
 
 ```javascript
@@ -88,8 +89,8 @@ ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052**
     // [language] Defines the date format and language
     language = "gb",
 
-    // [start || end ]  Début l'année de début et celle de fin du calendrier.
-    //
+    // [start || end ]  First and last year of the calendar.
+
     start = new Date().getFullYear() - 50,
     end = new Date().getFullYear() + 50,
 
@@ -97,6 +98,9 @@ ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052**
     autocomplete = "off",
 
 ```
+<br>
+
+***
 
 ## Change style
 
@@ -139,19 +143,15 @@ You can change the styles of the picker by overriding the classes of the latter.
 
 
 ```CSS
-// DOn't Do That 
+// DOn't do That 
 
 table{
     background-color : red;
 }
 
-If you do this then the background color of the picker will be red.
+// If you do this then the background color of the picker will be red.
 
 ```
-
-<br>
-
-***
 
 ## Author
 
@@ -159,9 +159,9 @@ Hi, I am a front-end developer specializing in react.js and javascript. What I l
 
 [SoftSkill profil](https://app.assessfirst.com/_/profile/d53utubs-raphael-parodi)
 
-[linkedin profil](https://www.linkedin.com/in/raphael-parodi-a942ab1b0/)
+[Linkedin profil](https://www.linkedin.com/in/raphael-parodi-a942ab1b0/)
 
-[Github](https://github.com/raficraft)
+[Github repository](https://github.com/raficraft)
 
 <br>
 
