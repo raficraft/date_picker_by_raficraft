@@ -1,9 +1,16 @@
 # Date picker by raficraft (live demo)
 
+
+![SASS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![netlify](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![netlify](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) 
+
+
 A multilingual date picker from scratch for react.
 [code source](https://github.com/raficraft/date_picker_by_raficraft)
 
-[Live demo host on netlify]()
+[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/) under construction ^^
 
 ## supported language
 
@@ -49,7 +56,7 @@ import { DatePicker } from "datepicker_by_raficraft";
         language="es"
         label="Espagnol picker"
         forHtml="es_picker"
-        key="es"
+        key="es"  //If you use, multiple picker. Define a unique key identifier
     ></DatePicker>
 
 ```
@@ -74,7 +81,8 @@ ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052**
     // [label] Optional, if you define it, a label will be associated with the input of the date picker
     label = "date picker",  
 
-    // [forHtml] Add a "for" attribute in the label and an "ID" attribute in the input. If no label, only the ID will be added. Indispensable if you have several date pickers on the same page. ^^
+    // [forHtml] Add a "for" attribute in the label and an "ID" attribute in the input. If no label, only the
+    // ID will be added. Indispensable if you have several date pickers on the same page. ^^
     forHtml = "datePicker", 
 
     // [language] Defines the date format and language
@@ -90,6 +98,63 @@ ex: for the year 2022, we get a calendar that starts in 1972 and ends in 2052**
 
 ```
 
-## 
+## Change style
 
 
+You can change the styles of the picker by overriding the classes of the latter. HTML structure of the picker.
+
+```HTML
+<div class="container_dataPicker_by_raficraft">
+    <label forhtml="es_picker">Espagnol picker</label>
+    <input type="text" class="fakeInput" placeholder="dd-mm-yy" name="es_picker" id="es_picker" 
+            data-format="date" autocomplete="off">
+    <div class="carousel">
+        <header class="head">
+            ...Contains the navigation button, the select button and the home button
+        </header>
+        <div class="carousel_container">
+            <table>
+                <thead>
+                    ...Contains the days of the week
+                <thead>
+                <tbody>
+                    ...Contains the days of the month 
+                    <tr>
+                        <td class="current" data-fulldate="14-01-22" data-year="2022" 
+                            data-month="enero">14</td>
+                        OR
+                        <td class="currentDay" data-fulldate="14-01-22" data-year="2022" 
+                            data-month="enero">14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+``` 
+<br>
+<span style="color:#ff6062;">However, be careful not to directly overload the following tags in your css without adding a parent class or a specific class.</span>
+
+<br>
+
+
+```CSS
+// DOn't Do That 
+
+table{
+    background-color : red;
+}
+
+If you do this then the background color of the picker will be red.
+
+```
+
+## Author
+
+Hi, I am a front-end developer specializing in react.js and javascript. What I like the most developed are tools and components designed to improve the productivity of front-line developers. Join me on linkedin so as not to miss any of my work. See you soon !! ^^
+
+[SoftSkill profil](https://app.assessfirst.com/_/profile/d53utubs-raphael-parodi)
+
+[linkedin profil](https://www.linkedin.com/in/raphael-parodi-a942ab1b0/)
+
+[Github](https://github.com/raficraft)
