@@ -168,7 +168,6 @@ Hi, I am a front-end developer specializing in react.js and javascript. What I l
 ***
 
 
-
 ## My other package
 
 ### Guides.js
