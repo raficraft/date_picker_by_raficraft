@@ -4,7 +4,7 @@
 ![SASS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![netlify](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![netlify](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) 
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 
 A multilingual date picker from scratch for react.
@@ -149,6 +149,10 @@ If you do this then the background color of the picker will be red.
 
 ```
 
+<br>
+
+***
+
 ## Author
 
 Hi, I am a front-end developer specializing in react.js and javascript. What I like the most developed are tools and components designed to improve the productivity of front-line developers. Join me on linkedin so as not to miss any of my work. See you soon !! ^^
@@ -158,3 +162,26 @@ Hi, I am a front-end developer specializing in react.js and javascript. What I l
 [linkedin profil](https://www.linkedin.com/in/raphael-parodi-a942ab1b0/)
 
 [Github](https://github.com/raficraft)
+
+<br>
+
+***
+
+
+
+## My other package
+
+### Guides.js
+
+
+Guide.js is the first tool in a series of four. This will allow the front-end developer to improve their working comfort and productivity.
+
+Guide.js allows you to insert guides to change their thickness, color and position in order to easily align the elements of your page. This feature is directly inspired by the one that can be found in Photoshop. ^^
+
+The project is completely made from scratch and has no dependencies. And it will be the same for the next modules.
+
+[NPM](https://www.npmjs.com/package/guides_js_by_raficraft)
+
+[Live demo](https://flamboyant-saha-06f6cd.netlify.app/)
+
+[Github repository](https://github.com/raficraft/guides_standAlone)
