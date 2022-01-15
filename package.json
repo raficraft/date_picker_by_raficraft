@@ -8,7 +8,7 @@
     "UI",
     "cutom input"
   ],
-  "version": "0.9.703",
+  "version": "0.9.704",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "https://github.com/raficraft/date_picker_by_raficraft"
   },
-  "homepage": "https://github.com/raficraft/date_picker_by_raficraft#readme.md",
+  "homepage": "https://suspicious-euclid-36780f.netlify.app/",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.15.1",
