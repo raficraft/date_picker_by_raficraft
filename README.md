@@ -10,7 +10,7 @@
 A multilingual date picker from scratch for react.
 [Code source](https://github.com/raficraft/date_picker_by_raficraft)
 
-[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/) under construction
+[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/)
 
 ## Supported language
 
@@ -148,9 +148,10 @@ You can change the styles of the picker by overriding the classes of the latter.
                 <tbody>
                     ...Contains the days of the month 
                     <tr>
+                        ...All days
                         <td class="current" data-fulldate="14-01-22" data-year="2022" 
                             data-month="enero">14</td>
-                        ...OR
+                        ...OR current Days
                         <td class="currentDay" data-fulldate="14-01-22" data-year="2022" 
                             data-month="enero">14</td>
                     </tr>
