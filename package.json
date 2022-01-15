@@ -8,7 +8,7 @@
     "UI",
     "cutom input"
   ],
-  "version": "0.9.604",
+  "version": "0.9.701",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
