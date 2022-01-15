@@ -49,15 +49,25 @@ import { DatePicker } from "datepicker_by_raficraft";
 
 ```javascript
 
+    //In a simple way
+
+    <DatePicker></DatePicker>
+
+    //Or whit props , all pros are optional
+
     <DatePicker
-        className="custom_input"
-        start={date.start}
+        start={date.start} 
         end={date.end}
         language="es"
         label="Espagnol picker"
         forHtml="es_picker"
         key="es"  //If you use, multiple picker. Define a unique key identifier
+        autocomplete="false"
+        readonly="null"
+        required="true"
     ></DatePicker>
+
+    //You can launch the 
 
 ```
 <br>
@@ -79,28 +89,36 @@ The different props that you can pass in your component
 
 //Default Value 
 
-    // [label] Optional, if you define it, a label will be associated with the input of the date picker
+    // [ label ] Optional, if you define it, a label will be associated with the input of the date picker
     label = "date picker",  
 
-    // [forHtml] Add a "for" attribute in the label and an "ID" attribute in the input. If no label, only the
+    // [ forHtml ] Add a "for" attribute in the label and an "ID" attribute in the input. If no label, only the
     // ID will be added. Indispensable if you have several date pickers on the same page. ^^
     forHtml = "datePicker", 
 
-    // [language] Defines the date format and language
+    // [ language ] Defines the date format and language
     language = "gb",
 
-    // [start || end ]  First and last year of the calendar.
+    // [ start || end ]  First and last year of the calendar.
 
     start = new Date().getFullYear() - 50,
     end = new Date().getFullYear() + 50,
 
-    // [autocomplete] Disable autocompletion
-    autocomplete = "off",
+    // [ autocomplete ] Disable autocompletion. For enabled change the paramters to "on"
+    autocomplete = "off",  
+
+    // [ readonly ] Prevent the user from modifying the field manually
+    readonly="null", 
+
+    // [ required ] Make the field mandatory for the validation of your form. 
+    // For disabled change the paramter to false
+    requrired="true",
 
 ```
 <br>
 
 ***
+
 
 ## Change style
 
@@ -152,6 +170,22 @@ table{
 // If you do this then the background color of the picker will be red.
 
 ```
+<br>
+
+***
+
+## Manage Error 
+
+```html
+
+<span class="error_message_container">
+    <p class="error_message"></p>
+</span>
+```
+
+<br>
+
+***
 
 ## Author
 
@@ -167,20 +201,11 @@ Hi, I am a front-end developer specializing in react.js and javascript. What I l
 
 ***
 
-
-## My other package
-
-### Guides.js
+## Patch Notes
 
 
-Guide.js is the first tool in a series of four. This will allow the front-end developer to improve their working comfort and productivity.
+### 15/01/2022
 
-Guide.js allows you to insert guides to change their thickness, color and position in order to easily align the elements of your page. This feature is directly inspired by the one that can be found in Photoshop. ^^
+-  Add new props "required"
+-  Add new props "readonly"
 
-The project is completely made from scratch and has no dependencies. And it will be the same for the next modules.
-
-[NPM](https://www.npmjs.com/package/guides_js_by_raficraft)
-
-[Live demo](https://flamboyant-saha-06f6cd.netlify.app/)
-
-[Github repository](https://github.com/raficraft/guides_standAlone)
