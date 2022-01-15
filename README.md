@@ -10,7 +10,7 @@
 A multilingual date picker from scratch for react.
 [Code source](https://github.com/raficraft/date_picker_by_raficraft)
 
-[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/)
+[Live demo host on netlify](https://suspicious-euclid-36780f.netlify.app/) under construction
 
 ## Supported language
 
@@ -127,12 +127,15 @@ You can change the styles of the picker by overriding the classes of the latter.
 
 ```HTML
 <div class="container_dataPicker_by_raficraft">
+
     <label forhtml="es_picker">Espagnol picker</label>
     <input type="text" class="fakeInput" placeholder="dd-mm-yy" name="es_picker" id="es_picker" 
             data-format="date" autocomplete="off">
+
     <span class="error_message_container">
         <p class="error_message"></p>
     </span>
+
     <div class="carousel">
         <header class="head">
             ...Contains the navigation button, the select button and the home button
